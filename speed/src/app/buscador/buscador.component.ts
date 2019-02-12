@@ -7,6 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class BuscadorComponent implements OnInit {
  @Output() public search = new EventEmitter<string>();
+ @Output() public filtratipo = new EventEmitter<string>();
+ filtro;
   constructor() {}
 
   ngOnInit() {

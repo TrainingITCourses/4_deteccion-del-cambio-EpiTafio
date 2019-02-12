@@ -31,8 +31,13 @@ export class SalidaComponent implements OnInit {
     this.cargaLinea (lanzamientosJS.launches[i]) ;
       }
     }
+
   this.mensaje.contenido = this.cuenta;
   }
+  onFiltraTipo(searchText: any) {
+    console.log('FiltraTipo: ' + searchText);
+  }
+
   cargaLinea (linea: any) {
 
     // console.log('CargaLinea()' + linea.name);
