@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   styleUrls: ['./lista-lanzamientos.component.css']
 })
 export class ListaLanzamientosComponent implements OnInit {
-  @Input() public mensaje = { contenido: 99 };
+  @Input() public mensaje = { contenido: 0 };
   @Input() public lanzamientos: any[];
   constructor() {
   }
